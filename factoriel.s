@@ -1,0 +1,5 @@
+	AREA myData, DATA
+		CONST EQU 4
+			
+	AREA myCode, CODE, READONLY
+		
