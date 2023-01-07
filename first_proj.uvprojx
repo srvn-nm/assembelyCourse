@@ -134,11 +134,11 @@
             <RunIndependent>0</RunIndependent>
             <UpdateFlashBeforeDebugging>1</UpdateFlashBeforeDebugging>
             <Capability>1</Capability>
-            <DriverSelection>-1</DriverSelection>
+            <DriverSelection>4096</DriverSelection>
           </Flash1>
           <bUseTDR>1</bUseTDR>
           <Flash2>BIN\UL2CM3.DLL</Flash2>
-          <Flash3></Flash3>
+          <Flash3>"" ()</Flash3>
           <Flash4></Flash4>
           <pFcarmOut></pFcarmOut>
           <pFcarmGrp></pFcarmGrp>
@@ -418,7 +418,7 @@
       </component>
     </components>
     <files>
-      <file attr="config" category="source" condition="ARMCC Exe" name="armcc\Device\SAM3XA\Source\ARM\startup_SAM3XA.s">
+      <file attr="config" category="source" condition="ARMCC Exe" name="armcc\Device\SAM3XA\Source\ARM\startup_SAM3XA.s" version="1.0.0">
         <instance index="0">RTE\Device\ATSAM3X4C\startup_SAM3XA.s</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Atmel" Cversion="1.0.0" condition="ATSAM3X4C"/>
         <package name="SAM3X_DFP" schemaVersion="1.3" url="http://packs.download.atmel.com/" vendor="Atmel" version="1.0.50"/>
@@ -426,7 +426,7 @@
           <targetInfo name="Target 1"/>
         </targetInfos>
       </file>
-      <file attr="config" category="source" condition="ARMCC Exe" name="armcc\Device\SAM3XA\Source\system_SAM3XA.c">
+      <file attr="config" category="source" condition="ARMCC Exe" name="armcc\Device\SAM3XA\Source\system_SAM3XA.c" version="1.0.0">
         <instance index="0">RTE\Device\ATSAM3X4C\system_SAM3XA.c</instance>
         <component Cclass="Device" Cgroup="Startup" Cvendor="Atmel" Cversion="1.0.0" condition="ATSAM3X4C"/>
         <package name="SAM3X_DFP" schemaVersion="1.3" url="http://packs.download.atmel.com/" vendor="Atmel" version="1.0.50"/>

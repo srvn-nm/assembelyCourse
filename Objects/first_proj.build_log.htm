@@ -26,22 +26,26 @@ Project File Date:  01/07/2023
 
 <h2>Output:</h2>
 *** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
-Build target 'Target 1'
-"factoriel.s", line 2 (column 3): Error: A1163E: Unknown opcode CONST , expecting opcode or Macro
-    2 00000000   CONST EQU 4
-                 ^
-"factoriel.s", line 22 (column 2): Error: A1163E: Unknown opcode HERE , expecting opcode or Macro
-   22 0000001a  HERE B HERE
-                ^
-2 Errors, 0 Warnings
+Rebuild target 'Target 1'
 assembling factoriel.s...
 assembling startup_SAM3XA.s...
+RTE/Device/ATSAM3X4C/system_SAM3XA.c(46): warning: // comments are not allowed in this language [-Wcomment]
+#define EEFC_SETUP      1               // Reset values:
+                                        ^
+RTE/Device/ATSAM3X4C/system_SAM3XA.c(515): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    PMC->PMC_MCKR = (PMC->PMC_MCKR & ~0x70) | (PMC_MCKR_Val & 0x70);
+                                   ~ ^~~~~
+RTE/Device/ATSAM3X4C/system_SAM3XA.c(518): warning: implicit conversion changes signedness: 'int' to 'unsigned int' [-Wsign-conversion]
+    PMC->PMC_MCKR = (PMC->PMC_MCKR & ~0x03) | (PMC_MCKR_Val & 0x03);
+                                   ~ ^~~~~
+3 warnings generated.
+compiling system_SAM3XA.c...
 linking...
-.\Objects\first_proj.axf: error: L6002U: Could not open file .\objects\factoriel.o: No such file or directory
-Not enough information to list image symbols.
-Not enough information to list load addresses in the image map.
-Finished: 2 information, 0 warning, 0 error and 1 fatal error messages.
-".\Objects\first_proj.axf" - 1 Error(s), 0 Warning(s).
+.\Objects\first_proj.axf: Warning: L6305W: Image does not have an entry point. (Not specified or not set due to multiple choices.)
+.\Objects\first_proj.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=904 RO-data=244 RW-data=4 ZI-data=1028  
+Finished: 0 information, 2 warning and 0 error messages.
+".\Objects\first_proj.axf" - 0 Error(s), 5 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -67,13 +71,12 @@ Package Vendor: Microchip
    * Component: ARM::CMSIS:CORE:5.6.0
 
    * Component: Microchip::Device:Startup:1.0.0
-      Source file:   templates/main.cpp
       Include file:  include/sam.h
       Source file:   templates/main.c
       Source file:   armcc/Device/SAM3XA/Source/ARM/startup_SAM3XA.s
+      Source file:   templates/main.cpp
       Source file:   armcc/Device/SAM3XA/Source/system_SAM3XA.c
-Target not created.
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

@@ -1,5 +1,5 @@
 	AREA myData, DATA
-		CONST EQU 4
+CONST EQU 4
 		
 	EXPORT __main
 	AREA myCode, CODE
@@ -19,5 +19,5 @@ loop
 	BNE loop
 	MUL r1, r2, r1
 	
-	HERE B HERE
+HERE B HERE
 	END
