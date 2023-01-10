@@ -1,12 +1,19 @@
-		
 	EXPORT __main
 	AREA myCodes, CODE
-		
 		
 __main
 	LDR r3, =2_01000101101001011100011001110001
 	LDR r1, =2_11110101001101000010000101010110
 	LDR r2, =2_10000111101001000101110000111000
+	LDR r4, =0x20000303
+	LDR r5, =0x20000203
+	LDR r6, =0x20000103
+	strb r2 ,[r6];
+	ldrb r1 ,[r6];
+	ldrh r2 ,[r4];
+	ldr r3 ,[r5];
+	strh r2 ,[r4];
+	ldrb r3 ,[r4];
 	
 HERE B HERE
 	END
