@@ -43,9 +43,9 @@
 //                 <1=> 64-bit in read mode (enhance power consumption)
 // </e>
 */
-#define EEFC_SETUP      1               // Reset values:
-#define EEFC0_FMR_Val   0x00000300      // 0x00000000
-#define EEFC1_FMR_Val   0x00000300      // 0x00000000
+#define EEFC_SETUP      1               
+#define EEFC0_FMR_Val   0x00000300     
+#define EEFC1_FMR_Val   0x00000300      
 
 
 /*--------------------- Power Management Controller Configuration ------------
