@@ -1,0 +1,13 @@
+		
+	EXPORT __main
+	AREA myCodes, CODE
+		
+		
+__main
+	LDR r3, =2-01000101101001011100011001110001
+	LDR r0, =CONST
+	LDR r1, =1
+	LDR r2, =1
+	
+HERE B HERE
+	END
