@@ -27,7 +27,13 @@ Project File Date:  01/11/2023
 <h2>Output:</h2>
 *** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
 Build target 'Target 1'
-".\Objects\proj3.axf" - 0 Error(s), 0 Warning(s).
+assembling myCode.s...
+linking...
+.\Objects\proj3.axf: Warning: L6305W: Image does not have an entry point. (Not specified or not set due to multiple choices.)
+.\Objects\proj3.sct(8): warning: L6314W: No section matches pattern *(InRoot$$Sections).
+Program Size: Code=892 RO-data=244 RW-data=16 ZI-data=1024  
+Finished: 0 information, 2 warning and 0 error messages.
+".\Objects\proj3.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -58,7 +64,7 @@ Package Vendor: Microchip
       Source file:   templates/main.cpp
       Source file:   armcc/Device/SAM3XA/Source/system_SAM3XA.c
       Source file:   armcc/Device/SAM3XA/Source/ARM/startup_SAM3XA.s
-Build Time Elapsed:  00:00:00
+Build Time Elapsed:  00:00:01
 </pre>
 </body>
 </html>

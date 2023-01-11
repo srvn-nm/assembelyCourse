@@ -12,6 +12,6 @@ HERE B HERE
 Q_Data
 		DCD 0x18
 		DCB "HWDB"
-		ALIGN 2
+		;ALIGN 2
 		DCB 0x36, 0x10
 		END
